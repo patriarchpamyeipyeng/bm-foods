@@ -3,13 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BM FOODS</title>
+    <link rel="icon" href="images/hugeicons--chef.svg">
+    <title> BM FOODS</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>B<span style="color: red;">M</span> FO<span style="color: red;">ODS</span></h1>
+        <h1><img src="images/ic--baseline-restaurant-menu.svg" alt="">B<span style="color: red;">M</span> FO<span style="color: red;">ODS</span><img src="images/hugeicons--chef.svg" alt=""></h1>
         </header>
+
+        <div class="container">
         <div class="menu">
             <div class="menu-item">
     <img src="images/burger.jpg" alt="Burger">
@@ -59,7 +62,7 @@
         <p>Price: $7.90</p>
         <button class="order-button">Order Now</button>
     </div>
-    
+
     <div class="menu-item">
     <img src="images/jollof rice.jpg" alt="">
     <h2>Jollof Rice</h2>
@@ -81,10 +84,14 @@
     <button class="order-button">Order Now</button>
     </div>
     </div>
+    <div class="cart-container">
     <div class="cart">
         <h2>Cart</h2>
         <ul id="cart-list"></ul>
         <p id="total-price">Total: $0.00</p>
+        <button id="pay-button">Pay Now</button>
+    </div>
+    </div>
     </div>
     <script src="script.js"></script>
 </body>
