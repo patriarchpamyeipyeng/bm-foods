@@ -6,8 +6,69 @@ body{
 header{
     background-color: #333;
     color: #fff;
+    position: sticky;
     padding: 1em;
+    top: 0;
     text-align: center;
+}
+header nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+header nav ul li{
+    margin-right: 20px;
+    position: relative;
+}
+header nav a{
+    text-decoration: none;
+    color: #ddd;
+    text-transform: uppercase;
+}
+header nav a:hover{
+    color: red;
+    font-size: 1.3em;
+}
+.dropdown{
+    display: none;
+    position: absolute;
+    background-color: #333;
+    padding: 1em;
+    z-index: 1;
+}
+.dropdown li{
+    margin-bottom: 10px;
+}
+
+.dropdown li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .dropdown li a:hover {
+    color: #ccc;
+  }
+  
+header nav ul li:hover .dropdown{
+    display: block;
+}
+.slideshow{
+    position: relative;
+    width: 80%;
+    height: 400px;
+    margin: 40px auto;
+}
+.slideshow img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: none;
+}
+.slideshow img.active{
+    display: block;
 }
 .menu{
     display: flex;
@@ -20,12 +81,21 @@ header{
     border: 1px solid #ddd;
     border-radius: 12px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+}
+.menu-item:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
 }
 .menu-item img{
     width: 100px;
     height: 100px;
     object-fit: cover;
     border-radius: 12px;
+    transition: transform 0.2s ease-in-out;
+}
+.menu-item:hover img{
+    transform: rotate(5deg);
 }
 .order-button{
     background-color: #333;
@@ -33,16 +103,19 @@ header{
     border: none;
     padding:0.5em 1em;
     border-radius: 6px;
+    transition: background-color 0.2s ease-in-out;
     cursor: pointer;
     text-transform: uppercase;
 }
 .order-button:hover{
     background-color: #555;
+    color: #fff;
 }
 .container{
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 2em;
 }
 .cart{
     margin-top: 2em auto;
@@ -100,3 +173,15 @@ header{
 #pay-button:hover{
     background-color: #3e8e41;
 }
+.social-media{
+    padding: 1em;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+}
+.social-media a{
+    margin-right: 10px;
+    color: #fff;
+}
+
+  

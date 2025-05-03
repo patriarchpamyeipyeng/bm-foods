@@ -9,10 +9,33 @@
 </head>
 <body>
     <header>
+        <nav>
         <h1><img src="images/ic--baseline-restaurant-menu.svg" alt="">B<span style="color: red;">M</span> FO<span style="color: red;">ODS</span><img src="images/hugeicons--chef.svg" alt=""></h1>
+        <ul>
+            <li> <a href="#">Home</a></li>
+            <li> <a href="#">Menu</a>
+            <ul class="dropdown">
+                <li><a href="#">BreakFast</a></li>
+                <li><a href="#">Lunch</a></li>
+                <li><a href="#">Dinner</a></li>
+            </ul>
+            </li>
+            <li> <a href="#">Contact</a></li>
+        </ul>
+        </nav>
         </header>
 
         <div class="container">
+            <div class="slideshow">
+                <img src="images/burger.jpg" alt="burger" class="active">
+                <img src="images/chicken.jpg" alt="" >
+                <img src="images/eba-soup.jpg" alt="" >
+                <img src="images/icecream.jpg" alt="" >
+                <img src="images/grill-fish.jpg" alt="" >
+                <img src="images/jollof rice.jpg" alt="" >
+                <img src="images/yam-sauce.jpg" alt="" >
+                
+            </div>
         <div class="menu">
             <div class="menu-item">
     <img src="images/burger.jpg" alt="Burger">
@@ -46,6 +69,20 @@
         <img src="images/french-pastry.jpg" alt="French Pastry">
         <h2>French Pastry</h2>
         <p>Price: $6.99</p>
+        <button class="order-button">Order Now</button>
+    </div>
+
+    <div class="menu-item">
+        <img src="images/pap-akara.jpg" alt="Pap and Akara">
+        <h2>Pap & Akara</h2>
+        <p>Price: $4.99</p>
+        <button class="order-button">Order Now</button>
+    </div>
+
+    <div class="menu-item">
+        <img src="images/plantain.jpg" alt="Plantain">
+        <h2>Plantain & <br>EggSauce</h2>
+        <p>Price: $3.99</p>
         <button class="order-button">Order Now</button>
     </div>
 
@@ -93,6 +130,15 @@
     </div>
     </div>
     </div>
+    <footer>
+    <div class="social-media">
+        <a href="#" target="_blank"><img src="images/email.png" alt="email"></a>
+        <a href="#" target="_blank"><img src="images/insta.png" alt="imstagram"></a>
+        <a href="#" target="_blank"><img src="images/phone.png" alt="phone"></a>
+        <a href="#" target="_blank"><img src="images/x.png" alt="twitter/x"></a>
+        <a href="#" target="_blank"><img src="images/ic--twotone-facebook.svg" alt="facebook"></a>
+    </div>
+    </footer>
     <script src="script.js"></script>
 </body>
 </html>
