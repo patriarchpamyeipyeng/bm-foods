@@ -29,7 +29,7 @@ header nav a{
 }
 header nav a:hover{
     color: red;
-    font-size: 1.3em;
+    font-size: 1.2em;
 }
 .dropdown{
     display: none;
@@ -119,8 +119,14 @@ header nav ul li:hover .dropdown{
     align-items: center;
     padding: 2em;
 }
+.cart-container{
+    justify-content: center;
+
+}
 .cart{
     margin-top: 2em auto;
+    margin-left: 20em;
+    margin-bottom: 2em;
     background-color: #333;
     padding: 1em;
     color: #ddd;
@@ -129,7 +135,7 @@ header nav ul li:hover .dropdown{
     border-radius: 12px;
     width: 300px;
     text-align: center;
-    justify-content: center;
+    
 }
 .cart h2{
     margin-top: 0;

@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #020202;
+    /* background-color: #020202; */
 }
 
 .container {
@@ -45,4 +45,7 @@ a{
     text-decoration: none;
     font-size: 1.2em;
     color: #ff0000;
+}
+.copyright{
+    
 }
